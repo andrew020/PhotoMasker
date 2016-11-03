@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4943AB121DCB2EFE006E33B3 /* girls_PNG6448.png in Resources */ = {isa = PBXBuildFile; fileRef = 4943AB111DCB2EFE006E33B3 /* girls_PNG6448.png */; };
 		49F20E251DCAEC9F001D5153 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F20E241DCAEC9F001D5153 /* main.m */; };
 		49F20E281DCAEC9F001D5153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F20E271DCAEC9F001D5153 /* AppDelegate.m */; };
 		49F20E2B1DCAEC9F001D5153 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F20E2A1DCAEC9F001D5153 /* ViewController.m */; };
 		49F20E2E1DCAEC9F001D5153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F20E2C1DCAEC9F001D5153 /* Main.storyboard */; };
 		49F20E301DCAEC9F001D5153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F20E2F1DCAEC9F001D5153 /* Assets.xcassets */; };
 		49F20E331DCAEC9F001D5153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F20E311DCAEC9F001D5153 /* LaunchScreen.storyboard */; };
+		49F20E3C1DCAEDF8001D5153 /* ALOPhotoMaskerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F20E3B1DCAEDF8001D5153 /* ALOPhotoMaskerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4943AB111DCB2EFE006E33B3 /* girls_PNG6448.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girls_PNG6448.png; sourceTree = "<group>"; };
 		49F20E201DCAEC9F001D5153 /* PhotoMasker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoMasker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F20E241DCAEC9F001D5153 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49F20E261DCAEC9F001D5153 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,8 @@
 		49F20E2F1DCAEC9F001D5153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F20E321DCAEC9F001D5153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49F20E341DCAEC9F001D5153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F20E3A1DCAEDF8001D5153 /* ALOPhotoMaskerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALOPhotoMaskerViewController.h; sourceTree = "<group>"; };
+		49F20E3B1DCAEDF8001D5153 /* ALOPhotoMaskerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALOPhotoMaskerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		49F20E221DCAEC9F001D5153 /* PhotoMasker */ = {
 			isa = PBXGroup;
 			children = (
+				4943AB111DCB2EFE006E33B3 /* girls_PNG6448.png */,
 				49F20E261DCAEC9F001D5153 /* AppDelegate.h */,
 				49F20E271DCAEC9F001D5153 /* AppDelegate.m */,
 				49F20E291DCAEC9F001D5153 /* ViewController.h */,
@@ -67,6 +73,8 @@
 				49F20E311DCAEC9F001D5153 /* LaunchScreen.storyboard */,
 				49F20E341DCAEC9F001D5153 /* Info.plist */,
 				49F20E231DCAEC9F001D5153 /* Supporting Files */,
+				49F20E3A1DCAEDF8001D5153 /* ALOPhotoMaskerViewController.h */,
+				49F20E3B1DCAEDF8001D5153 /* ALOPhotoMaskerViewController.m */,
 			);
 			path = PhotoMasker;
 			sourceTree = "<group>";
@@ -141,6 +149,7 @@
 				49F20E331DCAEC9F001D5153 /* LaunchScreen.storyboard in Resources */,
 				49F20E301DCAEC9F001D5153 /* Assets.xcassets in Resources */,
 				49F20E2E1DCAEC9F001D5153 /* Main.storyboard in Resources */,
+				4943AB121DCB2EFE006E33B3 /* girls_PNG6448.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +162,7 @@
 			files = (
 				49F20E2B1DCAEC9F001D5153 /* ViewController.m in Sources */,
 				49F20E281DCAEC9F001D5153 /* AppDelegate.m in Sources */,
+				49F20E3C1DCAEDF8001D5153 /* ALOPhotoMaskerViewController.m in Sources */,
 				49F20E251DCAEC9F001D5153 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PBLD589CG7;
 				INFOPLIST_FILE = PhotoMasker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.com.ncs.PhotoMasker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PBLD589CG7;
 				INFOPLIST_FILE = PhotoMasker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sg.com.ncs.PhotoMasker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +324,7 @@
 				49F20E391DCAEC9F001D5153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

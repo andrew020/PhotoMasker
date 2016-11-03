@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ALOPhotoMaskerViewController.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)start:(id)sender {
+    ALOPhotoMaskerViewController *controller = [[ALOPhotoMaskerViewController alloc] init];
+    [controller setImage:UIImagePNGRepresentation([UIImage imageNamed:@"girls_PNG6448"])];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 
