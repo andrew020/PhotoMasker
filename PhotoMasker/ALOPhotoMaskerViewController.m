@@ -394,7 +394,7 @@ UICollectionViewDelegate
     [sendButton addTarget:self action:@selector(send:) forControlEvents:UIControlEventTouchUpInside];
     sendButton.translatesAutoresizingMaskIntoConstraints = NO;
     sendButton.titleLabel.font = [UIFont boldSystemFontOfSize:15];
-    [sendButton setTitle:@"Send" forState:UIControlStateNormal];
+    [sendButton setTitle:@"Save" forState:UIControlStateNormal];
     [self.toolContainer addSubview:sendButton];
     NSLayoutConstraint *sendButtonRight = [NSLayoutConstraint
                                            constraintWithItem:sendButton
@@ -661,8 +661,8 @@ UICollectionViewDelegate
                                              constraintWithItem:self.imageContainer
                                              attribute:NSLayoutAttributeTop
                                              relatedBy:NSLayoutRelationEqual
-                                             toItem:self.topLayoutGuide
-                                             attribute:NSLayoutAttributeBottom
+                                             toItem:self.view
+                                             attribute:NSLayoutAttributeTop
                                              multiplier:1
                                              constant:0];
     NSLayoutConstraint *imageContianerLeft = [NSLayoutConstraint
@@ -767,8 +767,8 @@ UICollectionViewDelegate
     UIGraphicsEndImageContext();
     
     NSData *returnData = UIImagePNGRepresentation(resultingImage);
-    if (self.block) {
-        self.block(returnData);
+    if (_block) {
+        _block(returnData);
     }
     [self dismissViewControllerAnimated:YES completion:^{
         
@@ -887,8 +887,18 @@ UICollectionViewDelegate
     CGRect containerBounds = self.imageContainer.bounds;
     CGSize imageSize = self.imageView.image.size;
     CGFloat scale = imageSize.width / containerBounds.size.width;
-    self.imageView.frame = CGRectMake(0, 0, containerBounds.size.width, imageSize.height * scale);
+    self.imageView.frame = CGRectMake(0, 0, containerBounds.size.width, imageSize.height / scale);
+    //[self.imageContainer setContentInset:UIEdgeInsetsMake(self.topLayoutGuide.length, 0, 0, 0)];
     [self.imageContainer setContentSize:self.imageView.frame.size];
+}
+
++ (ALOPhotoMaskerViewController *)presendPhotoMasker:(UIViewController *)sourceViewController imageData:(NSData *)imageData block:(ModifyDone)block {
+    ALOPhotoMaskerViewController *controller = [[ALOPhotoMaskerViewController alloc] init];
+    controller.block = block;
+    [sourceViewController presentViewController:controller animated:YES completion:^{
+        [controller setImage:imageData];
+    }];
+    return controller;
 }
 
 @end
