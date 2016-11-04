@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^ModifyDone)(NSData *imageData);
+
 @interface ALOPhotoMaskerViewController : UIViewController
 
 - (void)setImage:(NSData *)imageData;
+
+@property (nonatomic, strong) UIColor *bkColor;
+@property (nonatomic, assign) ModifyDone block;
 
 @end
